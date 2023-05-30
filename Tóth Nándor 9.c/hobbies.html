@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap 4 Website Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https:/kit.fontawesome.com/b34905f570.js"crossorigin="anonymous"></script>
+  <style>
+
+    .kep1 {
+      background-image: url(eg.jpg);
+      background-size: cover;
+      background-position: center;
+      border-radius: 0px!important;
+    }
+
+    .cim {
+        color:black;
+    }
+
+    .icon {
+      margin: 0px 12px;
+    }
+
+    .kepek {
+      padding-top: 30px;
+      padding-bottom: 5px;
+    }
+
+    .hob {
+      padding-bottom: 25px;
+    }
+
+    .harmadik {
+      padding-top: 40px;
+    }
+
+    .le {
+      margin: 60px 0px 0px 0px
+    }
+
+    .navbar-brand {
+      margin-right: 20px;
+    }
+
+
+  </style>
+</head>
+<body>
+    <div class="jumbotron kep1 text-center" style="margin-bottom:0" >
+        <div class="container">
+            <h1 class="cim">Az első Bootstrap 4 oldalam</h1>
+            <p class="cim">Tóth Nándor</p> 
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark  sticky-top">
+      <a class="navbar-brand" href="fooldal.html" style="color: black; font-weight: bold;"> Menü / <i class="fa-solid fa-book" style="color: #000000;"></i></a>
+        <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon  text-center"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+           <ul class="navbar-nav">
+             <li class="nav-item">
+              <a class="nav-link icon" href="hobbies.html"><img src="on-time.png" alt=""></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link icon" href="games.html"><img src="steering-wheel.png" alt=""></a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+<div class="container" style="margin-top: 30px; margin-bottom: 30px;">
+    <div class="row">
+        <div class="col-sm-4">
+          <h2 class="hob">Hobbijaim</h2>
+          <img class="hob" src="hobb.jpg" alt="">
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#home">Futás</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#menu1">Futball</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#menu2">Forma 1</a>
+            </li>
+          </ul>
+
+        </div>
+        <div class="col-sm-8">
+          <div class="tab-content">
+            <div id="home" class="container tab-pane active"><br>
+              <h2>Futás <i class="fa-solid fa-person-running fa-beat-fade fa-sm"></i></h2>
+              <p>Heti kétszer szoktam futni egyedül vagy barátokkal. <br>
+                Ha otthon vagyok akkor Nagyecseden, ha a kollégiumban akkor a kertvárosban.</p>
+              <h5 class="kepek">Nagyecseden</h5>
+              <img class="shadow-lg" src="ecs fut.png" alt="">
+              <h5 class="kepek">Nyíregyházán</h5>
+              <img class="shadow-lg" src="nyh f.png" alt="">
+            </div>
+            <div id="menu1" class="container tab-pane fade"><br>
+              <h2>Futball <i class="fa-solid fa-futbol fa-bounce fa-sm"></i></h2>
+              <p>Amíg Nagyecseden tanultam szinte napirendszerességgel volt edzés amin általában ott voltam. Mióta Nyíregyházán tanulok csak hétvégén vagy szünetekben tudunk összegyülni a barátokkal és focizni egy jót.</p>
+              <h5>A pálya</h5>
+              <img class="shadow-lg" src="ecs foci.png" alt="">
+            </div>
+            <div id="menu2" class="container tab-pane fade"><br>
+              <h2>Forma 1 <i class="fa-solid fa-car-side fa-fade fa-sm"></i></h2>
+              <p>Gyerekkorom óta odavagyok az autókért és amikor pár éve először hallottam erről a (motor)sportról egyszerűen lenyűgözött, hogy milyen sebességgel tudnak bevenni bizonynos kanyarokat. <br> Régen F1-es pilóta szerettem volna lenni, de mára már tudom, ahhoz hogy bekerüljön valaki a száguldó cirkuszba nagyon sok pénz kell. <br> Ezért is van az, hogy a világon csak 20 embernek van lehetősége kormány mögé ülni minden évben. <br> Az álmom azonban megmaradt, hogy egyszer volán mögé ülhessek vagy versenyezzek valamilyen formában.</p>
+              <img class="shadow-lg" src="f1.jpg" alt="">
+            </div>
+          </div>
+          <hr class="d-sm-none">
+        </div>
+      </div>
+    </div>
+</div>
+
+<footer class="jumbotron le">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <p class="font-weight-bold text-info">Elérhetőségek</p>
+        <p class="text-secondary"><a href="#" class="text-decoration-none text-secondary">Email: ntoth007@gmail.com</a></p>
+        <p class="text-secondary"><a href="#" class="text-decoration-none text-secondary">Telefon: + 36 30 890 1110</a></p>
+        <p class="text-secondary"><a href="#" class="text-decoration-none text-secondary">Személyesen: előre megbeszélt helyszínen </a></p>
+      </div>
+      <div class="col-sm-4">
+        <p class="font-weight-bold text-info">Források</p>
+        <p class="text-secondary"><a href="https://wall.alphacoders.com/big.php?i=649639" class="text-decoration-none text-secondary">Jumbotron kép</a></p>
+        <p class="text-secondary"><a href="https://www.google.com/url?sa=i&url=http%3A%2F%2Fwww.ebirag.hu%2F%3Fpage_id%3D93&psig=AOvVaw2fND1S5lABT4C8D7JDi0TR&ust=1683474961827000&source=images&cd=vfe&ved=0CAQQjB1qFwoTCJDrgIuH4f4CFQAAAAAdAAAAABAE" class="text-decoration-none text-secondary">E.B.I.R.Á.G kép</a></p>
+        <p class="text-secondary"><a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.nyiregyhaza.hu%2Fpost%2Fa-varosi-felso-kereskedelmi-iskola-mostani-neven-a-szechenyi-100-eve-nyitotta-meg-kapuit-2018-09-21&psig=AOvVaw1zmcH8IvJqYUAW7s2Rh0d0&ust=1683475070546000&source=images&cd=vfe&ved=0CAQQjB1qFwoTCIDpnr6H4f4CFQAAAAAdAAAAABAJ" class="text-decoration-none text-secondary">Nyirszikszi kép</a></p>
+      </div>
+      <div class="col-sm-4 harmadik">
+        <p class="text-secondary"><a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Ftenor.com%2Fview%2Fwho-knows-gif-13099580&psig=AOvVaw3W73PId3WRXWN-ujXtqdGO&ust=1683475354600000&source=images&cd=vfe&ved=0CAQQjB1qFwoTCJDG-cWI4f4CFQAAAAAdAAAAABAE" class="text-decoration-none text-secondary">Who... kép</a></p>
+        <p class="text-secondary"><a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fstock.adobe.com%2Fno%2Fimages%2Fmale-and-female-hobbies-people-working-love-gardening-cooking-painting-hobby-occupation-vector-characters-illustration-of-male-and-female-hobby-drawing-cooking-and-artistic%2F234232125&psig=AOvVaw2edcjxG_0fAg76wnKhCBfl&ust=1683475595635000&source=images&cd=vfe&ved=0CAQQjB1qFwoTCICg4LiJ4f4CFQAAAAAdAAAAABAI" class="text-decoration-none text-secondary">Hobbik képe</a></p>
+        <p class="text-secondary"><a href="https://www.google.com/maps" class="text-decoration-none text-secondary">Goggle Maps képek</a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
